@@ -1,0 +1,279 @@
+﻿{
+    "l": {
+        "message": "de"
+    },
+    "title": {
+        "message": "Verlauf"
+    },
+    "searchBoxText": {
+        "message": "Suche"
+    },
+    "tab0": {
+        "message": "Tipp"
+    },
+    "tab1": {
+        "message": "Alles"
+    },
+    "tab2": {
+        "message": "Daum"
+    },
+    "tab3": {
+        "message": "Intervall" 
+    },
+    "month1": {
+        "message": "Januar" 
+    },
+    "month2": {
+        "message": "Februar" 
+    },
+    "month3": {
+        "message": "März" 
+    },
+    "month4": {
+        "message": "April" 
+    },
+    "month5": {
+        "message": "May" 
+    },
+    "month6": {
+        "message": "Juni" 
+    },
+    "month7": {
+        "message": "Juli" 
+    },
+    "month8": {
+        "message": "August" 
+    },
+    "month9": {
+        "message": "September" 
+    },
+    "month10": {
+        "message": "October" 
+    },
+    "month11": {
+        "message": "November" 
+    },
+    "month12": {
+        "message": "Dezember" 
+    },
+    "week1": {
+        "message": "Sonntag" 
+    },
+    "week2": {
+        "message": "Montag" 
+    },
+    "week3": {
+        "message": "Dienstag" 
+    },
+    "week4": {
+        "message": "Mittwoch" 
+    },
+    "week5": {
+        "message": "Donnerstag" 
+    },
+    "week6": {
+        "message": "Freitag" 
+    },
+    "week7": {
+        "message": "Samstag" 
+    },
+    "noFind": {
+        "message": "Leer."
+    },
+    "search": {
+        "message": "Suche"
+    },
+    "more": {
+        "message": "Mehr"
+    },
+    "hint1": {
+        "message": "Um die Einträge für einen bestimmten Tag zu zeigen, klicke auf 'Datum' und wähle die entsprechende Nummer."
+    },
+    "hint2": {
+        "message": "Um den Verlauf des gesamten Tab für 'Alles' zu zeigen."
+    },
+    "hint3": {
+        "message": "Durchsucht nur den vorher eingestellten Zeitraum."
+    },
+    "hint4": {
+        "message": "Um den Verlauf für einige Tage anzuzeigen, benutze den Tab 'Intervall'."
+    },
+    "hint5": {
+        "message": " - Klick auf diese Icon zeigt ein Fenster mit Informationen über die Adresse."
+    },
+    "hint6": {
+        "message": "Um eine hohe Anzahl an Adressen anzuzeigen, benutze den 'Mehr'-Knopf unten auf der Seite."
+    },
+    "linkAllHistory": {
+        "message": "Zeige den gesamten Verlauf..."
+    },
+    "dateCaptionDefault": {
+        "message": "Alles"
+    },
+    "interval": {
+        "message": "Datum: "
+    },
+    "last10": {
+        "message": "Letzte 10:"
+    },
+    "intervalCaption1": {
+        "message": "Von:"
+    },
+    "intervalCaption2": {
+        "message": "Bis:"
+    },
+    "buttonInterval": {
+        "message": "Zeigen"
+    },
+    "buttonHint": {
+        "message": "Nicht zeigen"
+    },
+    "lastVisit": {
+        "message": "Letzter Besuch"
+    },
+    "infURL": {
+        "message": "URL Info"
+    },
+    "resultCount": {
+        "message": "Anzahl der Ergebnisse"
+    },
+    "termText": {
+        "message": "Gib eine Anfrage oder Web-Adresse ein!"
+    },
+    "extension_description": {
+       "description": "Beschreibung der Erweiterung",
+       "message": "Nützlicher Kalender für chrome://history/, mit dem du den Verlauf für beliebige Zeiträume anzeigen lassen kannst. Desweiteren kannst du die Statitik der Browser-Benutzung einsehen."
+    },
+    "diag1": {
+        "message": "Statistiken"
+    },
+    "diag2": {
+        "message": "Jahr:"
+    },
+    "diag3": {
+        "message": "Monat:"
+    },
+    "diag4": {
+        "message": "Zeitplan einer bestimmten URL: "
+    },
+    "diag5": {
+        "message": "Zeitplan einer bestimmten URL anzeigen"
+    },
+    "diag6": {
+        "message": "Filter: "
+    },
+    "diag7": {
+        "message": "- filtern"
+    },
+    "diag8": {
+        "message": "Der Zeitplan einer bestimmten URL:"
+    },
+    "diag9": {
+        "message": "Liste der meistbesuchten Webseiten"
+    },
+    "diag10": {
+        "message": "Liste der meistbesuchten Webseiten anzeigen"
+    },
+    "diag11": {
+        "message": "Lokale Dateien"
+    },
+    "diag12": {
+        "message": "Einstellungen Chrome (about:*) ändern"
+    },
+    "diag13": {
+        "message": "Ändert Chrome Erweiterungen"
+    },
+    "diag14": {
+        "message": "Besuche gesamt: "
+    },
+    "delURL": {
+        "message": "URL in Papierkorb verschieben"
+    },
+    "delURLhint": {
+        "message": "<img src='imgs/Delete.png' title='URL in Papierkorb verschieben' width='16px' height='16px'/> klicken, um URL in den Papierkorb zu verschieben."
+    },
+    "delURLclear": {
+        "message": "Löschen"
+    },
+    "top20button": {
+        "message": "TOP 20, Torten-Diagramm"
+    },
+    "deleteAll": {
+        "message": "Alle URL in Papierkorb verschieben"
+    },
+    "titleOptions": {
+        "message": "Verlauf: Einstellungen"
+    },
+    "saveButton": {
+        "message": "Speichern"
+    },
+    "blackList": {
+        "message": "Blockier-Liste"
+    },
+    "i18n_blackListUrl_1": {
+        "message": "Wörter in Adressen von Webseiten blockieren:"
+    },
+    "i18n_blackListUrl_2": {
+        "message": "Alle Adressen, die ein Wort von dieser Liste enthalten, werden aus der Anzeige des Verlaufs entfernt. Dies wiederum heißt nicht, dass sie gelöscht werden."
+    },
+    "i18n_blackListUrl_3": {
+        "message": "Eine Zeile = ein Wort oder eine Adresse."
+    },
+    "i18n_blackListUrl_4": {
+        "message": "<b>Achtung: </b> Je mehr Wörter auf dieser Liste sind, umso langsamer wird es, den Verlauf zu durchsuchen."
+    },
+    "i18n_blackListUrl_5": {
+        "message": "Wörter im Namen von Webseiten blockieren:"
+    },
+    "i18n_blackListUrl_6": {
+        "message": "Alle Webseiten mit Adressen, die ein Wort von dieser Liste enthalten, werden aus der Anzeige des Verlaufs entfernt. Dies wiederum heißt nicht, dass sie gelöscht werden."
+    },
+    "i18n_blackListUrl_7": {
+        "message": "Eine Zeile = ein Wort oder eine Adresse."
+    },
+    "i18n_donate": {
+        "message": "Spenden"
+    },
+    "i18n_donate_1": {
+        "message": "Unterstütze das Project 'History Calendar' für den Google Chrome Browser"
+    },
+    "i18n_donate_2": {
+        "message": "Dein Geld wird die weitere Entwicklung dieses Projektes unterstützen."
+    },
+    "i18n_donate_3": {
+        "message": "Yandex Money:"
+    },
+    "i18n_donate_4": {
+        "message": "Konto:"
+    },
+    "i18n_donate_5": {
+        "message": "Betrag:"
+    },
+    "i18n_translate": {
+        "message": "Übersetzung"
+    },
+    "i18n_translate_1": {
+        "message": "Möchtest du die Erweiterung in deiner Muttersprache nutzen?"
+    },
+    "i18n_translate_2": {
+        "message": "Hast du einen Fehler in der Übersetzung gefunden?"
+    },
+    "i18n_translate_3": {
+        "message": "Schicke deinen Auftrag an diese Adresse"
+    },
+    "captionOptions": {
+        "message": "Einstellungen"
+    },
+    "i18n_translate_4": {
+        "message": "Übersetze alle benötigten Teile in den Anführungsstrichen nach dem Wort 'message:'"
+    },
+    "stars5": {
+        "message": "Danke, dass du History Calendar benutzt! Vergiss nicht, 5 Sterne zu geben..."
+    },
+    "i18n_caption_selectDateType": {
+        "message": "Date format:"
+    },
+    "i18n_misc": {
+        "message": "Sonstiges"
+    }
+}

@@ -1,0 +1,279 @@
+{
+    "l": {
+        "message": "ua"
+    },
+    "title": {
+        "message": "Історія"
+    },
+    "searchBoxText": {
+        "message": "Пошук"
+    },
+    "tab0": {
+        "message": "Підказка"
+    },
+    "tab1": {
+        "message": "Все"
+    },
+    "tab2": {
+        "message": "Дата"
+    },
+    "tab3": {
+        "message": "Інтервал"
+    },
+    "month1": {
+        "message": "січня"
+    },
+    "month2": {
+        "message": "лютого"
+    },
+    "month3": {
+        "message": "березня"
+    },
+    "month4": {
+        "message": "квітня"
+    },
+    "month5": {
+        "message": "травня"
+    },
+    "month6": {
+        "message": "червня"
+    },
+    "month7": {
+        "message": "липня"
+    },
+    "month8": {
+        "message": "серпня"
+    },
+    "month9": {
+        "message": "вересня"
+    },
+    "month10": {
+        "message": "жовтня"
+    },
+    "month11": {
+        "message": "листопада"
+    },
+    "month12": {
+        "message": "грудня"
+    },
+    "week1": {
+        "message": "неділя"
+    },
+    "week2": {
+        "message": "понеділок"
+    },
+    "week3": {
+        "message": "вівторок"
+    },
+    "week4": {
+        "message": "середа"
+    },
+    "week5": {
+        "message": "четвер"
+    },
+    "week6": {
+        "message": "п'ятниця"
+    },
+    "week7": {
+        "message": "субота"
+    },
+    "noFind": {
+        "message": "Порожньо."
+    },
+    "search": {
+        "message": "Знайти"
+    },
+    "more": {
+        "message": "Ще результати"
+    },
+    "hint1": {
+        "message": "Щоб проглянути журнал за певний день, перейдіть на вкладку 'Дата' и виберіть число."
+    },
+    "hint2": {
+        "message": "Щоб проглянути всю історію повністю, перейдіть на вкладку 'Все'."
+    },
+    "hint3": {
+        "message": "Пошук здійснюється тільки за вже заданим інтервалом часу."
+    },
+    "hint4": {
+        "message": "Щоб проглянути історію за кілька днів, використовуйте вкладку 'Інтервал'."
+    },
+    "hint5": {
+        "message": " - клік по этому значку показывает окно с информацией о адресе."
+    },
+    "hint6": {
+        "message": "Для перегляду більшої кількості адрес використовуйте кнопку 'Ще результати' знизу сторінки."
+    },
+    "linkAllHistory": {
+        "message": "Показати всю історію..."
+    },
+    "dateCaptionDefault": {
+        "message": "Все"
+    },
+    "interval": {
+        "message": "Дата: "
+    },
+    "last10": {
+        "message": "Останні 10:"
+    },
+    "intervalCaption1": {
+        "message": "Починаючи з:"
+    },
+    "intervalCaption2": {
+        "message": "Закінчуючи:"
+    },
+    "buttonInterval": {
+        "message": "Показати"
+    },
+    "buttonHint": {
+        "message": "Більше не показувати"
+    },
+    "lastVisit": {
+        "message": "Останній візит"
+    },
+    "infURL": {
+        "message": "Інформація про URL"
+    },
+    "resultCount": {
+        "message": "Кількість результатів"
+    },
+    "termText": {
+        "message": "Введіть запит чи адресу сайта"
+    },
+    "extension_description": {
+       "description": "Description of the extension",
+       "message": "Зручний календар для chrome://history/, дозволяє переглянути Історію за будь-який інтервал часу. Також є можливість перегляду статистики по використовуванню браузера."
+    },
+    "diag1": {
+        "message": "Статистика"
+    },
+    "diag2": {
+        "message": "Рік:"
+    },
+    "diag3": {
+        "message": "Місяц:"
+    },
+    "diag4": {
+        "message": "Графік унікальних URL: "
+    },
+    "diag5": {
+        "message": "Показати графік унікальных URL"
+    },
+    "diag6": {
+        "message": "Фільтр: "
+    },
+    "diag7": {
+        "message": "фільтр - "
+    },
+    "diag8": {
+        "message": "Графік унікальных URL:"
+    },
+    "diag9": {
+        "message": "Список найвівідуваніших сайтів"
+    },
+    "diag10": {
+        "message": "Показати список найвівідуваніших сайтів"
+    },
+    "diag11": {
+        "message": "Локальні файли"
+    },
+    "diag12": {
+        "message": "Сторінки налаштувань Chrome (about:*)"
+    },
+    "diag13": {
+        "message": "Сторінки розширень Chrome"
+    },
+    "diag14": {
+        "message": "Всього відвідувань: "
+    },
+    "delURL": {
+        "message": "Відправити URL до кошика"
+    },
+    "delURLhint": {
+        "message": "Натисніть на <img src='imgs/Delete.png' title='Відправити URL до кошика' width='16px' height='16px'/> для вилучення URL."
+    },
+    "delURLclear": {
+        "message": "Очистити"
+    },
+    "top20button": {
+        "message": "Топ 20, колова діаграма"
+    },
+    "deleteAll": {
+        "message": "Відправити всі URL до кошика"
+    },
+    "titleOptions": {
+        "message": "Історія: Налаштування"
+    },
+    "saveButton": {
+        "message": "Зберегти"
+    },
+    "blackList": {
+        "message": "Чорний список"
+    },
+    "i18n_blackListUrl_1": {
+        "message": "Стоп-слова в адресах сайтів:"
+    },
+    "i18n_blackListUrl_2": {
+        "message": "Всі адреси, що містять слова з цього списку будуть виключені з показу в історії. Проте, це не значит, що вони будуть вилучені."
+    },
+    "i18n_blackListUrl_3": {
+        "message": "Одна строка = одне слово чи адреса."
+    },
+    "i18n_blackListUrl_4": {
+        "message": "<b>Увага: </b> чим більше слів у цьому списки, тим повільніше відбувається перегляд історіи."
+    },
+    "i18n_blackListUrl_5": {
+        "message": "Стоп-слова у заголовках сайтів:"
+    },
+    "i18n_blackListUrl_6": {
+        "message": "Всі сайти, що містять у заголовку слова з цього списку будуть вилучені з показу в історіи. Проте, це не значит, що вони будуть вилучені."
+    },
+    "i18n_blackListUrl_7": {
+        "message": "Одна строка = одне слово чи словосполучення."
+    },
+    "i18n_donate": {
+        "message": "Поядка"
+    },
+    "i18n_donate_1": {
+        "message": "Підтримайте проект History Calendar для браузера Google Chrome."
+    },
+    "i18n_donate_2": {
+        "message": "Ваша матеріальна допомога дозволить в подальшому развиватися проекту."
+    },
+    "i18n_donate_3": {
+        "message": "Яндекс гроші:"
+    },
+    "i18n_donate_4": {
+        "message": "Рахунок:"
+    },
+    "i18n_donate_5": {
+        "message": "Гаманець:"
+    },
+    "i18n_translate": {
+        "message": "Переказ"
+    },
+    "i18n_translate_1": {
+        "message": "Хочете користуватися розширенням на своїй рідній мові?"
+    },
+    "i18n_translate_2": {
+        "message": "Знашли неточність в перекладі?"
+    },
+    "i18n_translate_3": {
+        "message": "Надсилайте свої переклади за адресою"
+    },
+    "captionOptions": {
+        "message": "Налаштування"
+    },
+    "i18n_translate_4": {
+        "message": "Перекладати потрібно всі фрази у лапках післе слова 'message:'"
+    },
+    "stars5": {
+        "message": "Дякую за те, щто використовуєте History Calendar! Не забудьте... виставити рейтинг 5 зірок."
+    },
+    "i18n_caption_selectDateType": {
+        "message": "Формат дати:"
+    },
+    "i18n_misc": {
+        "message": "Різне"
+    }
+}

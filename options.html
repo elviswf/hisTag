@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <link rel="icon" href="favicon.png"/>
+    <title></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+    <link href="jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="optionsCSS.css" rel="stylesheet" type="text/css" />
+    
+    <script src="jquery-2.0.0.min.js" type="text/javascript"></script>
+    <script src="jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+    <script src="optionsScript.js" type="text/javascript"></script>
+    <script src="class/options.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="header">
+        <img id="logo" src="icon-128.png" width="67" height="67" class="logo" border="0"/>
+        <h1 id="logoCaption"><span id="captionOptions"></span> History Calendar</h1>
+    </div>
+    
+  <div id="tabs" class="myTab">
+  
+	<ul>
+        <li id="t0"><a id="i18n_blackList" href="#tabs-0"></a></li>
+        <li id="t1"><a id="i18n_donate" href="#tabs-1"></a></li>
+        <li id="t2"><a id="i18n_translate" href="#tabs-2"></a></li>
+        <li id="t3"><a id="i18n_misc" href="#tabs-3"></a></li>
+	</ul>
+    
+    <!-- Черный список -->
+    <div id="tabs-0">
+        <div class="stars5"><a href="https://chrome.google.com/webstore/detail/ilfjhacjjbcdmimjeaakpnlhdcloijcg"></a><span class="close closeStar5">x</span></div>
+        <div class="block">
+            <div class="main">
+                <textarea id="BlackListUrl"></textarea>
+            </div>
+            <div class="help">
+                <h4 id="i18n_blackListUrl_1"></h4>
+                <p id="i18n_blackListUrl_2"></p>
+                <p>
+                    <em id="i18n_blackListUrl_3"></em>
+                    <ul>
+                        <li>facebook</li>
+                        <li>mail.google.com</li>
+                        <li>http://en.wikipedia.org/wiki/Google_Chrome</li>
+                        <li>http://www.google.ru/images/srpr/logo3w.png</li>
+                    </ul>
+                </p>
+                <p class="attention"></p>
+                <br />
+                <input id="buttonSave1" type="button" value=""/>
+                <input id="buttonClear1" type="button" value=""/>
+            </div>
+        </div>
+        <hr />
+        <div class="block">
+            <div class="main">
+                <textarea id="BlackListCaption"></textarea>
+            </div>
+            <div class="help">
+                <h4 id="i18n_blackListUrl_5"></h4>
+                <p id="i18n_blackListUrl_6"></p>
+                <p>
+                    <em id="i18n_blackListUrl_7"></em>
+                    <ul>
+                        <li>Latest 50 Quotes</li>
+                        <li>Google Reader</li>
+                        <li>Database</li>
+                    </ul>
+                </p>
+                <p class="attention"></p>
+                <br />
+                <input id="buttonSave2" type="button" value=""/>
+                <input id="buttonClear2" type="button" value=""/>
+            </div>
+        </div>
+	</div>
+    
+    <!-- Donate -->
+    <div id="tabs-1">
+        <div class="stars5"><a href="https://chrome.google.com/webstore/detail/ilfjhacjjbcdmimjeaakpnlhdcloijcg"></a><span class="close closeStar5">x</span></div>
+        <div class="block">
+            <div class="main">
+                <h3 id="i18n_donate_1"></h3>
+                <p id="i18n_donate_2"></p>
+                <hr />
+                <p id="i18n_donate_3" class="money"></p>
+                <p class="money2"><span id="i18n_donate_4"></span> <b>410011091654956</b></p>
+                <hr />
+                <p class="money">QIWI:</p>
+                <p class="money2"><span id="i18n_donate_5"></span> <b>9535010440</b></p>
+                <hr />
+                <!-- PayPal -->
+                <p class="money">PayPal:</p>
+                <br />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="VQY8BHZC4P398">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/ru_RU/i/scr/pixel.gif" width="1" height="1">
+                </form>
+                <!-- /PayPal -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Перевод -->
+    <div id="tabs-2">
+        <div class="stars5"><a href="https://chrome.google.com/webstore/detail/ilfjhacjjbcdmimjeaakpnlhdcloijcg"></a><span class="close closeStar5">x</span></div>
+        <div class="block">
+            <div class="main">
+                <textarea id="jsonText"></textarea>
+            </div>
+            <div class="help">
+                <select id="selectLng">
+                    <option value="ru">Русский (ru)</option>
+                    <option value="en">English (en)</option>
+                    <option value="zh_CN">中文 (zh_CN)</option>
+                    <option value="de">Deutsch (de)</option>
+                    <option value="pt_BR">Portuguese of Brazil (pt_BR)</option>
+                    <option value="pt_PT">Portuguese (pt_PT)</option>
+                    <option value="it">Italiano (it)</option>
+                    <option value="uk">Українська (uk)</option>
+                </select>
+                <p id="i18n_translate_1"></p>
+                <p id="i18n_translate_2"></p>
+                <p><span id="i18n_translate_3"></span> <a href="mailto:History%20Calendar%20&lt;viruseg85@gmail.com&gt;">viruseg85@gmail.com</a></p>
+                <br />
+                <p><em id="i18n_translate_4"></em></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Общие -->
+    <div id="tabs-3">
+        <div class="stars5"><a href="https://chrome.google.com/webstore/detail/ilfjhacjjbcdmimjeaakpnlhdcloijcg"></a><span class="close closeStar5">x</span></div>
+        <div class="block">
+            <div class="main">
+                <p id="i18n_caption_selectDateType">Формат даты:</p>
+                <select id="selectDateType">
+                    <option value="0">dd.mm.yyyy</option>
+                    <option value="1">mm.dd.yyyy</option>
+                    <option value="2">dd month yyyy</option>
+                </select>
+            </div>
+            <div class="help">
+                
+            </div>
+        </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>

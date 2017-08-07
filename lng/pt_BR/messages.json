@@ -1,0 +1,279 @@
+{
+    "l": {
+        "message": "pt_BR"
+    },
+    "title": {
+        "message": "Histórico"
+    },
+    "searchBoxText": {
+        "message": "Buscar"
+    },
+    "tab0": {
+        "message": "Pista"
+    },
+    "tab1": {
+        "message": "Tudo"
+    },
+    "tab2": {
+        "message": "Data"
+    },
+    "tab3": {
+        "message": "Intervalo" 
+    },
+    "month1": {
+        "message": "Janeiro" 
+    },
+    "month2": {
+        "message": "Fevereiro" 
+    },
+    "month3": {
+        "message": "Março" 
+    },
+    "month4": {
+        "message": "Abril" 
+    },
+    "month5": {
+        "message": "Maio" 
+    },
+    "month6": {
+        "message": "Junho" 
+    },
+    "month7": {
+        "message": "Julho" 
+    },
+    "month8": {
+        "message": "Agosto" 
+    },
+    "month9": {
+        "message": "Setembro" 
+    },
+    "month10": {
+        "message": "Outubro" 
+    },
+    "month11": {
+        "message": "Novembro" 
+    },
+    "month12": {
+        "message": "Dezembro" 
+    },
+    "week1": {
+        "message": "Domingo" 
+    },
+    "week2": {
+        "message": "Segunda" 
+    },
+    "week3": {
+        "message": "Terça" 
+    },
+    "week4": {
+        "message": "Quarta" 
+    },
+    "week5": {
+        "message": "Quinta" 
+    },
+    "week6": {
+        "message": "Sexta" 
+    },
+    "week7": {
+        "message": "Sabado" 
+    },
+    "noFind": {
+        "message": "Vazio."
+    },
+    "search": {
+        "message": "Buscar"
+    },
+    "more": {
+        "message": "Mais"
+    },
+    "hint1": {
+        "message": "Para ver o registro de um dia específico, clique em 'Data' e selecione o número."
+    },
+    "hint2": {
+        "message": "'Todos' Para ver o histórico completo."
+    },
+    "hint3": {
+        "message": "Pesquisas somente para o intervalo de tempo pré-definido."
+    },
+    "hint4": {
+        "message": "Para ver o histórico de alguns dias, use a guia 'Intervalo'."
+    },
+    "hint5": {
+        "message": " - clique neste ícone para exibir uma janela com informações sobre o endereço."
+    },
+    "hint6": {
+        "message": "Para ver um número maior de endereços, use 'Mais' na parte inferior da página."
+    },
+    "linkAllHistory": {
+        "message": "Mostrar todo o Histórico..."
+    },
+    "dateCaptionDefault": {
+        "message": "Tudo"
+    },
+    "interval": {
+        "message": "Data: "
+    },
+    "last10": {
+        "message": "10 Últimos:"
+    },
+    "intervalCaption1": {
+        "message": "De:"
+    },
+    "intervalCaption2": {
+        "message": "Até:"
+    },
+    "buttonInterval": {
+        "message": "Mostrar"
+    },
+    "buttonHint": {
+        "message": "Não mostrar"
+    },
+    "lastVisit": {
+        "message": "Última visita"
+    },
+    "infURL": {
+        "message": "URL info"
+    },
+    "resultCount": {
+        "message": "Número de resultados"
+    },
+    "termText": {
+        "message": "Digite uma consulta ou um endereço da web"
+    },
+    "extension_description": {
+       "description": "Descrição da extensão",
+       "message": "Handy calendar para chrome://history/, você pode visualizar o histórico em qualquer intervalo de tempo. Você também pode ver as estatísticas sobre o uso do navegador."
+    },
+    "diag1": {
+        "message": "Estatísticas"
+    },
+    "diag2": {
+        "message": "Ano:"
+    },
+    "diag3": {
+        "message": "Mês:"
+    },
+    "diag4": {
+        "message": "O cronograma da URL única: "
+    },
+    "diag5": {
+        "message": "Veja a programação da URL única"
+    },
+    "diag6": {
+        "message": "Filtro: "
+    },
+    "diag7": {
+        "message": "filtro - "
+    },
+    "diag8": {
+        "message": "O cronograma da URL única:"
+    },
+    "diag9": {
+        "message": "Lista de sites mais visitados"
+    },
+    "diag10": {
+        "message": "Mostrar a lista de sites mais visitados"
+    },
+    "diag11": {
+        "message": "Arquivos locais"
+    },
+    "diag12": {
+        "message": "Altera as configurações Chrome (about: *)"
+    },
+    "diag13": {
+        "message": "Altera extensões Chrome"
+    },
+    "diag14": {
+        "message": "Total de Visitas: "
+    },
+    "delURL": {
+        "message": "Enviar URL à lixeira"
+    },
+    "delURLhint": {
+        "message": "Click <img src='imgs/Delete.png' title='Send URL to basket' width='16px' height='16px'/> in order to add a URL to the basket."
+    },
+    "delURLclear": {
+        "message": "Limpar"
+    },
+    "top20button": {
+        "message": "TOP 20,Pizza-Gráfico"
+    },
+    "deleteAll": {
+        "message": "Enviar todas as URLs para a lixeira"
+    },
+    "titleOptions": {
+        "message": "Histórico: Preferências"
+    },
+    "saveButton": {
+        "message": "Salvar"
+    },
+    "blackList": {
+        "message": "Lista Negra"
+    },
+    "i18n_blackListUrl_1": {
+        "message": "Não exibir sites com as seguintes palavras no endereço:"
+    },
+    "i18n_blackListUrl_2": {
+        "message": "Todos os endereços que contêm as palavras nesta lista serão removidos da exibição do histórico. No entanto, isso não significa que eles serão removidos."
+    },
+    "i18n_blackListUrl_3": {
+        "message": "Uma linha = uma palavra, ou o endereço."
+    },
+    "i18n_blackListUrl_4": {
+        "message": "<b>Attention: </b> mais palavras nesta lista, mais lento o acesso ao histórico."
+    },
+    "i18n_blackListUrl_5": {
+        "message": "Não exibir sites com as seguintes palavras no título:"
+    },
+    "i18n_blackListUrl_6": {
+        "message": "Todos os endereços desta lista que contêm no título as palavras digitadas serão removidos da exibição do histórico. No entanto, isso não significa que eles serão removidos."
+    },
+    "i18n_blackListUrl_7": {
+        "message": "Uma linha = uma palavra ou frase."
+    },
+    "i18n_donate": {
+        "message": "Doação"
+    },
+    "i18n_donate_1": {
+        "message": "Suporte - Project History Calendar for browser Google Chrome."
+    },
+    "i18n_donate_2": {
+        "message": "Seu dinheiro ajudará a desenvolver o projeto."
+    },
+    "i18n_donate_3": {
+        "message": "Yandex Money:"
+    },
+    "i18n_donate_4": {
+        "message": "Conta:"
+    },
+    "i18n_donate_5": {
+        "message": "Carteira (Purse):"
+    },
+    "i18n_translate": {
+        "message": "Tradução"
+    },
+    "i18n_translate_1": {
+        "message": "Você quer usar a extensão em sua língua nativa?"
+    },
+    "i18n_translate_2": {
+        "message": "Algum erro encontrado na tradução?"
+    },
+    "i18n_translate_3": {
+        "message": "Envie o seu pedido para o endereço"
+    },
+    "captionOptions": {
+        "message": "Preferências"
+    },
+    "i18n_translate_4": {
+        "message": "Traduzir todas as frases entre aspas necessárias após a palavra 'mensagem:' "
+    },
+    "stars5": {
+        "message": "Obrigado por usar o History Calendar! E não se esqueça de nos dar 5 Estrelas"
+    },
+    "i18n_caption_selectDateType": {
+        "message": "Formato de data:"
+    },
+    "i18n_misc": {
+        "message": "Diverso"
+    }
+}

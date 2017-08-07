@@ -1,0 +1,279 @@
+{
+    "l": {
+        "message": "en"
+    },
+    "title": {
+        "message": "History"
+    },
+    "searchBoxText": {
+        "message": "Search"
+    },
+    "tab0": {
+        "message": "Hint"
+    },
+    "tab1": {
+        "message": "All"
+    },
+    "tab2": {
+        "message": "Date"
+    },
+    "tab3": {
+        "message": "Interval" 
+    },
+    "month1": {
+        "message": "January" 
+    },
+    "month2": {
+        "message": "February" 
+    },
+    "month3": {
+        "message": "March" 
+    },
+    "month4": {
+        "message": "April" 
+    },
+    "month5": {
+        "message": "May" 
+    },
+    "month6": {
+        "message": "June" 
+    },
+    "month7": {
+        "message": "July" 
+    },
+    "month8": {
+        "message": "August" 
+    },
+    "month9": {
+        "message": "September" 
+    },
+    "month10": {
+        "message": "October" 
+    },
+    "month11": {
+        "message": "November" 
+    },
+    "month12": {
+        "message": "December" 
+    },
+    "week1": {
+        "message": "Sunday" 
+    },
+    "week2": {
+        "message": "Monday" 
+    },
+    "week3": {
+        "message": "Tuesday" 
+    },
+    "week4": {
+        "message": "Wednesday" 
+    },
+    "week5": {
+        "message": "Thursday" 
+    },
+    "week6": {
+        "message": "Friday" 
+    },
+    "week7": {
+        "message": "Saturday" 
+    },
+    "noFind": {
+        "message": "Empty."
+    },
+    "search": {
+        "message": "Search"
+    },
+    "more": {
+        "message": "More"
+    },
+    "hint1": {
+        "message": "To view the log for a specific day, click the 'Date' and select the number."
+    },
+    "hint2": {
+        "message": "To view the history of the entire tab to 'All'."
+    },
+    "hint3": {
+        "message": "Searches only for the pre-selected time interval."
+    },
+    "hint4": {
+        "message": "To view stories for a few days, use the tab 'Interval'."
+    },
+    "hint5": {
+        "message": " - click on this icon displays a window with information about the address."
+    },
+    "hint6": {
+        "message": "To view a larger number of addresses, use the 'More' bottom of the page."
+    },
+    "linkAllHistory": {
+        "message": "Show all history..."
+    },
+    "dateCaptionDefault": {
+        "message": "All"
+    },
+    "interval": {
+        "message": "Date: "
+    },
+    "last10": {
+        "message": "Last 10:"
+    },
+    "intervalCaption1": {
+        "message": "From:"
+    },
+    "intervalCaption2": {
+        "message": "To:"
+    },
+    "buttonInterval": {
+        "message": "Show"
+    },
+    "buttonHint": {
+        "message": "Do not show"
+    },
+    "lastVisit": {
+        "message": "Last visit"
+    },
+    "infURL": {
+        "message": "URL info"
+    },
+    "resultCount": {
+        "message": "Number of results"
+    },
+    "termText": {
+        "message": "Enter a query or a web address"
+    },
+    "extension_description": {
+       "description": "Description of the extension",
+       "message": "Handy calendar for chrome://history/, you can view the history for any time interval. Also you can see your statistics."
+    },
+    "diag1": {
+        "message": "Statistics"
+    },
+    "diag2": {
+        "message": "Year:"
+    },
+    "diag3": {
+        "message": "Month:"
+    },
+    "diag4": {
+        "message": "The schedule of unique URL: "
+    },
+    "diag5": {
+        "message": "See the schedule of unique URL"
+    },
+    "diag6": {
+        "message": "Filter: "
+    },
+    "diag7": {
+        "message": "filter - "
+    },
+    "diag8": {
+        "message": "The schedule of unique URL:"
+    },
+    "diag9": {
+        "message": "List of most visited websites"
+    },
+    "diag10": {
+        "message": "Show the list of most visited websites"
+    },
+    "diag11": {
+        "message": "Local files"
+    },
+    "diag12": {
+        "message": "Changes the settings Chrome (about:*)"
+    },
+    "diag13": {
+        "message": "Changes extensions Chrome"
+    },
+    "diag14": {
+        "message": "Total Visits: "
+    },
+    "delURL": {
+        "message": "Send URL to basket"
+    },
+    "delURLhint": {
+        "message": "Click <img src='imgs/Delete.png' title='Send URL to basket' width='16px' height='16px'/> in order to add a URL to the basket."
+    },
+    "delURLclear": {
+        "message": "Clear"
+    },
+    "top20button": {
+        "message": "TOP 20, Pie Chart"
+    },
+    "deleteAll": {
+        "message": "Send all URL to basket"
+    },
+    "titleOptions": {
+        "message": "History: Preferences"
+    },
+    "saveButton": {
+        "message": "Save"
+    },
+    "blackList": {
+        "message": "Black List"
+    },
+    "i18n_blackListUrl_1": {
+        "message": "Stop words in the addresses of sites:"
+    },
+    "i18n_blackListUrl_2": {
+        "message": "All the addresses containing the words from this list will be removed from display in history. However, this does not mean that they will be removed."
+    },
+    "i18n_blackListUrl_3": {
+        "message": "One line = one word, or address."
+    },
+    "i18n_blackListUrl_4": {
+        "message": "<b>Attention: </b> more words on this list, the slower browsing history."
+    },
+    "i18n_blackListUrl_5": {
+        "message": "Stop words in the title of sites:"
+    },
+    "i18n_blackListUrl_6": {
+        "message": "All the addresses containing the words in the title of this list will be removed from display in history. However, this does not mean that they will be removed."
+    },
+    "i18n_blackListUrl_7": {
+        "message": "One line = one word or phrase."
+    },
+    "i18n_donate": {
+        "message": "Donate"
+    },
+    "i18n_donate_1": {
+        "message": "Support Project History Calendar for browser Google Chrome."
+    },
+    "i18n_donate_2": {
+        "message": "Your money will help further develop the project."
+    },
+    "i18n_donate_3": {
+        "message": "Yandex Money:"
+    },
+    "i18n_donate_4": {
+        "message": "Account:"
+    },
+    "i18n_donate_5": {
+        "message": "Purse:"
+    },
+    "i18n_translate": {
+        "message": "Translation"
+    },
+    "i18n_translate_1": {
+        "message": "Do you want to use the extension in your native language?"
+    },
+    "i18n_translate_2": {
+        "message": "Found error in translation?"
+    },
+    "i18n_translate_3": {
+        "message": "Send your order to the address"
+    },
+    "captionOptions": {
+        "message": "Preferences"
+    },
+    "i18n_translate_4": {
+        "message": "Translate all the phrases needed in quotes after the word 'message:'"
+    },
+    "stars5": {
+        "message": "Thank you for using History Calendar! Don't forget to... Rate 5 Stars"
+    },
+    "i18n_caption_selectDateType": {
+        "message": "Date format:"
+    },
+    "i18n_misc": {
+        "message": "Misc"
+    }
+}

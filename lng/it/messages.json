@@ -1,0 +1,279 @@
+{
+    "l": {
+        "message": "it"
+    },
+    "title": {
+        "message": "Cronologia"
+    },
+    "searchBoxText": {
+        "message": "Cerca"
+    },
+    "tab0": {
+        "message": "Suggerimenti"
+    },
+    "tab1": {
+        "message": "Tutti"
+    },
+    "tab2": {
+        "message": "Data"
+    },
+    "tab3": {
+        "message": "Intervallo" 
+    },
+    "month1": {
+        "message": "Gennaio" 
+    },
+    "month2": {
+        "message": "Febbraio" 
+    },
+    "month3": {
+        "message": "Marzo" 
+    },
+    "month4": {
+        "message": "Aprile" 
+    },
+    "month5": {
+        "message": "Maggio" 
+    },
+    "month6": {
+        "message": "Giugno" 
+    },
+    "month7": {
+        "message": "Luglio" 
+    },
+    "month8": {
+        "message": "Agosto" 
+    },
+    "month9": {
+        "message": "Settembre" 
+    },
+    "month10": {
+        "message": "Ottobre" 
+    },
+    "month11": {
+        "message": "Novembre" 
+    },
+    "month12": {
+        "message": "Dicembre" 
+    },
+    "week1": {
+        "message": "Domenica" 
+    },
+    "week2": {
+        "message": "Lunedi" 
+    },
+    "week3": {
+        "message": "Martedi" 
+    },
+    "week4": {
+        "message": "Mercoledi" 
+    },
+    "week5": {
+        "message": "Giovedi" 
+    },
+    "week6": {
+        "message": "Venerdi" 
+    },
+    "week7": {
+        "message": "Sabato" 
+    },
+    "noFind": {
+        "message": "Vuoto."
+    },
+    "search": {
+        "message": "Cerca"
+    },
+    "more": {
+        "message": "Avanti"
+    },
+    "hint1": {
+        "message": "Per visualizzare il registro per un giorno specifico, fare clic su 'Data' e selezionare il giorno."
+    },
+    "hint2": {
+        "message": "Per visualizzare la cronologia completa, fare clic su 'Tutti'."
+    },
+    "hint3": {
+        "message": "Ricerche solo per l'intervallo scelto."
+    },
+    "hint4": {
+        "message": "Per visualizzare la cronologia in un certo intervallo, fare clic su 'Intervallo'."
+    },
+    "hint5": {
+        "message": " - fare clic su questa icons mostra maggiorni informazioni dul sito."
+    },
+    "hint6": {
+        "message": "Per visualizzare più elementi della cronologia, fare clic su 'Avanti' in fondo a questa pagina."
+    },
+    "linkAllHistory": {
+        "message": "Mostra tutta la cronologia..."
+    },
+    "dateCaptionDefault": {
+        "message": "Tutti"
+    },
+    "interval": {
+        "message": "Data: "
+    },
+    "last10": {
+        "message": "Ultimi 10:"
+    },
+    "intervalCaption1": {
+        "message": "Da:"
+    },
+    "intervalCaption2": {
+        "message": "A:"
+    },
+    "buttonInterval": {
+        "message": "Visualizza"
+    },
+    "buttonHint": {
+        "message": "Nascondi"
+    },
+    "lastVisit": {
+        "message": "Ultima visita"
+    },
+    "infURL": {
+        "message": "Info URL"
+    },
+    "resultCount": {
+        "message": "Numero di risultati"
+    },
+    "termText": {
+        "message": "Immettere una parola o un indirizzo web"
+    },
+    "extension_description": {
+       "description": "Descrizione della estensione",
+       "message": "Calendario facile per chrome://history/, и possibile visualizzare la cronologia per ogni intervallo di tempo. Inoltre и possibile visualizzare le statistiche sull'utilizzo di un browser."
+    },
+    "diag1": {
+        "message": "Statistiche"
+    },
+    "diag2": {
+        "message": "Anno:"
+    },
+    "diag3": {
+        "message": "Mese:"
+    },
+    "diag4": {
+        "message": "Statistiche per un URL specifico: "
+    },
+    "diag5": {
+        "message": "Mostra le statistiche per un URL specifico"
+    },
+    "diag6": {
+        "message": "Filtro: "
+    },
+    "diag7": {
+        "message": "filtro - "
+    },
+    "diag8": {
+        "message": "Statistiche per un URL specifico:"
+    },
+    "diag9": {
+        "message": "Lista dei siti più visitati"
+    },
+    "diag10": {
+        "message": "Mostra la lista dei siti più visitati"
+    },
+    "diag11": {
+        "message": "File locali"
+    },
+    "diag12": {
+        "message": "Changes the settings Chrome (about:*)"
+    },
+    "diag13": {
+        "message": "Changes extensions Chrome"
+    },
+    "diag14": {
+        "message": "Visite totali: "
+    },
+    "delURL": {
+        "message": "Metti URL nel cestino"
+    },
+    "delURLhint": {
+        "message": "Fai Clic su <img src='imgs/Delete.png' title='Metti URL nel cestino' width='16px' height='16px'/> per mettere l'URL nel cestino."
+    },
+    "delURLclear": {
+        "message": "Pulisci"
+    },
+    "top20button": {
+        "message": "Top 20, grafico"
+    },
+    "deleteAll": {
+        "message": "Metti tutti gli URL nel cestino"
+    },
+    "titleOptions": {
+        "message": "History: Preferenze"
+    },
+    "saveButton": {
+        "message": "Salva"
+    },
+    "blackList": {
+        "message": "Lista Nera"
+    },
+    "i18n_blackListUrl_1": {
+        "message": "Parole di blocco negli indirizzi dei siti:"
+    },
+    "i18n_blackListUrl_2": {
+        "message": "Tutti gli indirizzi che contengono le parole da questo elenco verranno rimosse dalla visulaizzazione della cronologia. Tuttavia, questo non significa che essi vengono rimossi dalla cronologia."
+    },
+    "i18n_blackListUrl_3": {
+        "message": "Una riga = una parola, oppure un indirizzo."
+    },
+    "i18n_blackListUrl_4": {
+        "message": "<b>Attenzione: </b> più parole nell'elenco fa che la navigazione della lista cronologia diventa più lenta."
+    },
+    "i18n_blackListUrl_5": {
+        "message": "Parole di blocco nel titolo dei siti:"
+    },
+    "i18n_blackListUrl_6": {
+        "message": "Tutti le pagine che contengono le parole da questo elenco nel titolo verranno rimosse dalla visulaizzazione della cronologia. Tuttavia, questo non significa che essi vengono rimossi dalla cronologia."
+    },
+    "i18n_blackListUrl_7": {
+        "message": "Una riga = una parola oppure una frase."
+    },
+    "i18n_donate": {
+        "message": "Donazioni"
+    },
+    "i18n_donate_1": {
+        "message": "Aiuta il progetto History Calendar per Google Chrome."
+    },
+    "i18n_donate_2": {
+        "message": "La tua donazione ci aiuta negli sviluppi futuri del progetto."
+    },
+    "i18n_donate_3": {
+        "message": "Yandex Money:"
+    },
+    "i18n_donate_4": {
+        "message": "Account:"
+    },
+    "i18n_donate_5": {
+        "message": "Purse:"
+    },
+    "i18n_translate": {
+        "message": "Traduzioni"
+    },
+    "i18n_translate_1": {
+        "message": "Vuoi usare questa estenzione nella lingua madre tua?"
+    },
+    "i18n_translate_2": {
+        "message": "Trova un errore nella traduzione?"
+    },
+    "i18n_translate_3": {
+        "message": "Invia le tue note e segnalazioni a "
+    },
+    "captionOptions": {
+        "message": "Preferenze"
+    },
+    "i18n_translate_4": {
+        "message": "Traduci tutte le frasi tra virgolette dopo la parola 'message:'"
+    },
+    "stars5": {
+        "message": "Grazie per aver usato History Calendar! Non dimenticare di darci il voto... 5 Stelle"
+    },
+    "i18n_caption_selectDateType": {
+        "message": "Formato data:"
+    },
+    "i18n_misc": {
+        "message": "Varie"
+    }
+}

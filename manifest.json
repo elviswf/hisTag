@@ -1,0 +1,21 @@
+{
+
+
+    "manifest_version": 2,
+    "description": "__MSG_extension_description__",
+    "name": "HisTag",
+    "permissions": ["history","chrome://favicon/","tabs", "webNavigation"],
+    "version": "1.15.6",
+    "chrome_url_overrides": {
+        "history": "history.html"
+    },
+    "icons": {
+        "128": "icon-128.png"
+    },
+    "options_page": "options.html",
+    "background": {
+        "page": "background.html"
+    },
+        "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+
+}
