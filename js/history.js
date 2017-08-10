@@ -23,6 +23,9 @@ $(document).ready(function () {
     $( "#AddHistory" ).click(function() {
         loadHistory();
     });
+    $('.tags').click(function() {
+        tagSearch(this);
+    })
  });
 function getHistoryItemHTML(dataItem){
   var template = '<div class="media"><div class="media-body"><span class="media-meta pull-right">/%dateTime%/</span><h4 class="title">/%historyUrl%/</h4><p class="summary">';
@@ -31,7 +34,7 @@ function getHistoryItemHTML(dataItem){
   var tagLen = dataItem.tags.length;
   for(var i = 0; i<tagLen; ++i){
     var tag = dataItem.tags[i];
-    var buttonTemp = '<button type="button" class="btn btn-primary btn-xs">/%tagName%/</button>';
+    var buttonTemp = '<button type="button" class="btn btn-primary btn-xs tags">/%tagName%/</button>';
     var buttonHTML = buttonTemp.replace("/%tagName%/", tag);
     html += buttonHTML;
   }
@@ -49,7 +52,8 @@ function getUserFriendDate(date){
 function loadHistory() {
    // Insert data into html to show the history and tag
    // data is a dictory which contains data.url, data.urlid, data.tags, data.dates
-   var data = [];
+    //
+    // var data = [];
    for(var i = 0 ;i <10; ++i){
       var dataItem = {};
       dataItem.url = 'test'+i;
@@ -64,6 +68,9 @@ function loadHistory() {
       var cell3 = row.insertCell(2);
       cell3.innerHTML = getHistoryItemHTML(dataItem);
    }
+    $('.tags').click(function() {
+        tagSearch(this);
+    })
 };
 
 function mySearch(){
@@ -97,3 +104,35 @@ function mySearch(){
     }
   }
 };
+
+function tagSearch(btu){
+    var table = document.getElementById('historyTable');
+    input = btu.innerHTML;
+    filter = input.toUpperCase();
+    tr = table.getElementsByTagName("tr");
+    for(var i = 0; i< tr.length; ++i){
+        buttons = tr[i].getElementsByTagName("button");
+        if(buttons){
+            var found = false;
+            for(var j = 0; j< buttons.length; ++j){
+                var tag = buttons[j];
+                if(tag.innerHTML.toUpperCase().indexOf(filter) > -1){
+                    found = true;
+                    break;
+                }
+                console.log(tag.value);
+            }
+
+            if(found){
+                tr[i].style.display = "";
+            }
+            else{
+                tr[i].style.display = "none";
+            }
+        }
+        else{
+            //no tag
+            tr[i].style.display = "none";
+        }
+    }
+}
