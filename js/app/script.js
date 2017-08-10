@@ -15,6 +15,11 @@ if (localStorage["viewDateType"]==undefined) localStorage["viewDateType"] = '0';
 
 $(document).ready(function() {
     
+    $("#goToFocusPage").click(function(){
+    	console.log("Go!!!");
+    	location.href = 'index.html';
+    	$(this).hide;
+    })
     setBaner();
     
     
