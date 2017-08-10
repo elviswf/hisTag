@@ -1,0 +1,66 @@
+
+.tooltip span
+{
+  visibility: hidden;
+  position: absolute; 
+  top: 55px;
+  left: 140px;
+  z-index: 999;
+  width: 500px;
+  margin-left: -127px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  opacity: .95;
+  background-color: #ddd;                     
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));  
+  border-radius: 4px;  
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;  
+  text-shadow: 0 1px 0 rgba(255,255,255,.4);
+  font-size: .75em;
+  overflow-x: hidden;
+}
+
+
+.tooltip:hover span
+{
+  visibility: visible;
+}
+
+.tooltip span:before,
+.tooltip span:after
+{
+  content: "";
+  position: absolute;
+  z-index: 2000;
+  top: -8px;
+  left: 50%;
+  margin-left: -8px;  
+  border-bottom: 8px solid #59ADD4;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;        
+  border-top: 0;  
+}
+
+.tooltip span:before
+{
+  border-top-color: #ccc;
+  top: -8px;
+}
+
+.blue-tooltip span 
+{
+  border-color: #59add4;
+  background-color: #61bde7;
+}
+
+.blue-tooltip span:after
+{ 
+  border-top-color: #61bde7;
+}
+
+.blue-tooltip span:before
+{
+  border-top-color: #59add4;
+}
