@@ -126,9 +126,6 @@ define(function() {
 		var end = Number.MAX_VALUE;
 		if (endDate != null)
 			end = endDate.getTime();
-		console.log(data);
-		console.log(start);
-		console.log(end);
 		for (var i = 0; i < data.length; i++) {
 			if (data[i].date <= end && data[i].date >= start)
 				filteredData.push(data[i]);
@@ -438,64 +435,64 @@ define(function() {
 	};
 
 
-	utils.searchWordsFun = function(words) {
-		searchWords = []
-			for (i = 0; i < words.length; i++) {
-				searchWords.push({
-					text: words[i].term,
-					size: words[i].count,
-				});
-			}
-		return searchWords;
-	};
+    utils.searchWordsFun = function(words) {
+        searchWords = [];
+        for (i = 0; i < words.length; i++) {
+            searchWords.push({
+                    text: words[i].term,
+                    size: words[i].count
+            });
+        }
+        return searchWords;
+    };
 
-	utils.storeStartEnd = function(data){
-		var startEnd = [];
-		var seStored = sessionStorage.getItem('se');
+    utils.storeStartEnd = function(data){
+        var startEnd = [];
+        var seStored = sessionStorage.getItem('se');
 
-		var end = data[0].date;
-		var start = data[0].date;
-		for (i=1;i<data.length;i++) {
-			if (data[i].date > end) {
-				end = data[i].date;
-			}
-			if (data[i].date < start) {
-				start = data[i].date;
-			}
-		}
-		if (start != null){
-			//var span = 24 * 3600;//(end - start) * 1;
-			//startEnd.push({start: new Date(start - span), end: new Date(end + span)});
-			end.setDate(end.getDate() + 1);
-			startEnd.push({start: start, end: end});
-			sessionStorage.setItem("se", JSON.stringify(startEnd));
-		}
+        var end = data[0].date;
+        var start = data[0].date;
+        for (i=1;i<data.length;i++) {
+            if (data[i].date > end) {
+                end = data[i].date;
+            }
+            if (data[i].date < start) {
+                start = data[i].date;
+            }
+        }
+        if (start != null){
+            //var span = 24 * 3600;//(end - start) * 1;
+            //startEnd.push({start: new Date(start - span), end: new Date(end + span)});
+            end.setDate(end.getDate() + 1);
+            startEnd.push({start: start, end: end});
+            sessionStorage.setItem("se", JSON.stringify(startEnd));
+        }
 
-	};
+    };
 
-	utils.getRecommends= function(tag, num){
-		var datas = get_by_tag(tag);
-		var tags = {};
-		for (var i = 0; i < datas.length; i++) {
-			for (var j = 0; j < data[i].tags.length; j++) {
-				var tagName = data[i].tags[j];
-				if (tagName != tag) {
-					if (tags.hasOwnProperty(tagName)) {
-						tags[tagName] = 1;
-					}
-					else
-						tags[tagName] += 1;
-				}
-			}
-		}
-		tagList = []
-			for (var key in tags) {
-				if (key) {
-					tagList.push({term: key, count: tags[key]});
-				}
-			}
-		return utils.sortByPropRev(tagList, 'count').slice(0, num);
-	};
+    utils.getRecommends= function(tag, num){
+        var datas = get_by_tag(tag);
+        var tags = {};
+        for (var i = 0; i < datas.length; i++) {
+            for (var j = 0; j < data[i].tags.length; j++) {
+                var tagName = data[i].tags[j];
+                if (tagName != tag) {
+                    if (tags.hasOwnProperty(tagName)) {
+                        tags[tagName] = 1;
+                    }
+                    else
+                        tags[tagName] += 1;
+                }
+            }
+        }
+        tagList = []
+        for (var key in tags) {
+            if (key) {
+                tagList.push({term: key, count: tags[key]});
+            }
+        }
+        return utils.sortByPropRev(tagList, 'count').slice(0, num);
+    };
 
-	return utils;
+    return utils;
 });
