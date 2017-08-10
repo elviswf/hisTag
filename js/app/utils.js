@@ -473,5 +473,29 @@ define(function() {
 
 	};
 
+	utils.getRecommends= function(tag, num){
+		var datas = get_by_tag(tag);
+		var tags = {};
+		for (var i = 0; i < datas.length; i++) {
+			for (var j = 0; j < data[i].tags.length; j++) {
+				var tagName = data[i].tags[j];
+				if (tagName != tag) {
+					if (tags.hasOwnProperty(tagName)) {
+						tags[tagName] = 1;
+					}
+					else
+						tags[tagName] += 1;
+				}
+			}
+		}
+		tagList = []
+			for (var key in tags) {
+				if (key) {
+					tagList.push({term: key, count: tags[key]});
+				}
+			}
+		return utils.sortByPropRev(tagList, 'count').slice(0, num);
+	};
+
 	return utils;
 });
