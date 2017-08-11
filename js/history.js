@@ -22,13 +22,10 @@ $(document).ready(function () {
       mySearch();
     });
 
-    $( "#AddHistory" ).click(function() {
-        loadHistory();
-    });
-
     $('.tags').click(function() {
         tagSearch(this);
     })
+    loadHistory();
     onStarClick();
     fillInput();
  });
@@ -46,9 +43,8 @@ function onStarClick(){
   });
 }
 function getHistoryItemHTML(dataItem){
-  var template = '<div class="media"><div class="media-body"><span class="media-meta pull-right">/%dateTime%/</span><h4 class="title">/%historyUrl%/</h4><p class="summary">';
-  var html = template.replace("/%dateTime%/", dataItem.dates).replace("/%historyUrl%/", dataItem.url);
-  
+  var template = '<div class="media"><div class="media-body"><span class="media-meta pull-right">/%dateTime%/</span><h4 class="title"><a href="/%historyUrl%/" title="">/%historyTitle%/</a></h4><p class="summary">';
+  var html = template.replace("/%dateTime%/", getUserFriendDate(new Date(dataItem.dates))).replace("/%historyUrl%/", dataItem.url).replace("/%historyTitle%/", dataItem.title);
   var tagLen = dataItem.tags.length;
   for(var i = 0; i<tagLen; ++i){
     var tag = dataItem.tags[i];
@@ -67,30 +63,87 @@ function getUserFriendDate(date){
   };
   return date.toLocaleDateString("en-US", options);
 };
+
+function loadJsonFile(){
+  $.getJSON("model/history.json", function (historyData){
+    sessionStorage.setItem("historyData", JSON.stringify(historyData.data));
+  });
+};
+
+function get_by_url_id(url_id){
+  result = [];
+  var dataString = sessionStorage.getItem("historyData");
+  var historyData = JSON.parse(dataString);
+  for(var i = 0; i< historyData.length; ++i){
+    var item = historyData[i];
+    if(item.urlid === url_id){
+      result.push(item);
+    }
+  }
+  return result;
+};
+
+
+function get_by_tag(tag){
+  result = [];
+  var dataString = sessionStorage.getItem("historyData");
+  var historyData = JSON.parse(dataString);
+  for(var i = 0; i< historyData.length; ++i){
+    var item = historyData[i];
+    var tags = item.tags;
+    if(tags){
+      var found = false;
+      for(var j =0; j< tags.length; ++j){
+        if(tags[j] == tag){
+          found = true;
+          break;
+        }
+      } 
+      if(found){
+        result.push(item);
+      }
+    }
+  }
+  console.log(result);
+  return result;
+};
+
+function get_by_date(beginDate, endDate){
+  result = [];
+  var dataString = sessionStorage.getItem("historyData");
+  var historyData = JSON.parse(dataString);
+  for(var i = 0; i< historyData.length; ++i){
+    var item = historyData[i];
+    var date  = item.dates;
+    if(date <= endDate && date >= beginDate){
+      result.push(item);
+    }
+  }
+  console.log(result);
+  return result;
+}
+
 function loadHistory() {
    // Insert data into html to show the history and tag
    // data is a dictory which contains data.url, data.urlId, data.tags, data.dates
-
-   for(var i = 0 ;i <10; ++i){
-      var dataItem = {};
-      dataItem.url = 'test'+i;
-      dataItem.urlId = i;
-      dataItem.dates = getUserFriendDate(new Date(Date.now()));
-      dataItem.tags = ['tag'+i];
+   
+  loadJsonFile();// Load from history.json
+  for(var i = 0 ;i <40; ++i){
+      var dataItem = get_by_url_id(i)[0];
       var table = document.getElementById('historyTable');
       var row = table.insertRow(0);
       var cell1 = row.insertCell(0);
       var template = '<div class="ckbox"><input type="checkbox" id="checkbox/%itemId%/"></input><label for="checkbox/%itemId%/"></label></div>'
-      cell1.innerHTML = template.replace("/%itemId%/", dataItem.urlId).replace("/%itemId%/", dataItem.urlId);
+      cell1.innerHTML = template.replace("/%itemId%/", dataItem.urlid).replace("/%itemId%/", dataItem.urlid);
       var cell2 = row.insertCell(1);
       cell2.innerHTML = '<a href="javascript:;" class="star"><i class="glyphicon glyphicon-star"></i></a>';
       var cell3 = row.insertCell(2);
       cell3.innerHTML = getHistoryItemHTML(dataItem);
-   }
-    $('.tags').click(function() {
-        tagSearch(this);
-    })
-    onStarClick();
+  }
+  $('.tags').click(function() {
+      tagSearch(this);
+  })
+  onStarClick();
 };
 
 function mySearch(){
