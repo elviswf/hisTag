@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
-	$('.star').on('click', function () {
-      $(this).toggleClass('star-checked');
-    });
-
     $('.ckbox label').on('click', function () {
       $(this).parents('tr').toggleClass('selected');
     });
+
+    $("#goToIndexPage").click(function(){
+    	location.href = 'index.html';
+    })
 
     $('.btn-filter').on('click', function () {
       var $target = $(this).data('target');
@@ -17,16 +17,34 @@ $(document).ready(function () {
         $('.table tr').css('display', 'none').fadeIn('slow');
       }
     });
+
     $( "#myInput" ).keyup(function() {
       mySearch();
     });
+
     $( "#AddHistory" ).click(function() {
         loadHistory();
     });
+
     $('.tags').click(function() {
         tagSearch(this);
     })
+    onStarClick();
+    fillInput();
  });
+
+function fillInput(){
+  var searchTag = sessionStorage.getItem("searchTag");
+  input = document.getElementById("myInput");
+  input.value = searchTag;
+  mySearch();
+};
+
+function onStarClick(){
+  $('.star').click(function () {
+    $(this).toggleClass('star-checked');
+  });
+}
 function getHistoryItemHTML(dataItem){
   var template = '<div class="media"><div class="media-body"><span class="media-meta pull-right">/%dateTime%/</span><h4 class="title">/%historyUrl%/</h4><p class="summary">';
   var html = template.replace("/%dateTime%/", dataItem.dates).replace("/%historyUrl%/", dataItem.url);
@@ -51,18 +69,19 @@ function getUserFriendDate(date){
 };
 function loadHistory() {
    // Insert data into html to show the history and tag
-   // data is a dictory which contains data.url, data.urlid, data.tags, data.dates
-    //
-    // var data = [];
+   // data is a dictory which contains data.url, data.urlId, data.tags, data.dates
+
    for(var i = 0 ;i <10; ++i){
       var dataItem = {};
       dataItem.url = 'test'+i;
+      dataItem.urlId = i;
       dataItem.dates = getUserFriendDate(new Date(Date.now()));
       dataItem.tags = ['tag'+i];
       var table = document.getElementById('historyTable');
       var row = table.insertRow(0);
       var cell1 = row.insertCell(0);
-      cell1.innerHTML = '<div class="ckbox"><input type="checkbox" id="checkbox1"></input><label for="checkbox1"></label></div>';
+      var template = '<div class="ckbox"><input type="checkbox" id="checkbox/%itemId%/"></input><label for="checkbox/%itemId%/"></label></div>'
+      cell1.innerHTML = template.replace("/%itemId%/", dataItem.urlId).replace("/%itemId%/", dataItem.urlId);
       var cell2 = row.insertCell(1);
       cell2.innerHTML = '<a href="javascript:;" class="star"><i class="glyphicon glyphicon-star"></i></a>';
       var cell3 = row.insertCell(2);
@@ -71,6 +90,7 @@ function loadHistory() {
     $('.tags').click(function() {
         tagSearch(this);
     })
+    onStarClick();
 };
 
 function mySearch(){

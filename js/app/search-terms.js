@@ -2,6 +2,9 @@ define(["app/utils", "moment", "d3-context-menu", "ion.rangeSlider"], function(u
         function go_to_tag_page(tag) {
             // TODO: turn to tag page herer!
             console.log("Plz add tag page here!", tag);
+            sessionStorage.clear();
+            sessionStorage.setItem("searchTag", tag);
+            location.href = 'history.html';
         }
         var visualization = {};
         var startDate = null;
