@@ -44,7 +44,7 @@ function onStarClick(){
 }
 function getHistoryItemHTML(dataItem){
   var template = '<div class="media"><div class="media-body"><span class="media-meta pull-right">/%dateTime%/</span><h4 class="title"><a href="/%historyUrl%/" title="">/%historyTitle%/</a></h4><p class="summary">';
-  var html = template.replace("/%dateTime%/", getUserFriendDate(new Date(dataItem.dates))).replace("/%historyUrl%/", dataItem.url).replace("/%historyTitle%/", dataItem.title);
+  var html = template.replace("/%dateTime%/", getUserFriendDate(new Date(dataItem.dates*1000))).replace("/%historyUrl%/", dataItem.url).replace("/%historyTitle%/", dataItem.title);
   var tagLen = dataItem.tags.length;
   for(var i = 0; i<tagLen; ++i){
     var tag = dataItem.tags[i];
