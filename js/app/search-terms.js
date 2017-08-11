@@ -2,7 +2,6 @@ define(["app/utils", "moment", "d3-context-menu", "ion.rangeSlider"], function(u
         function go_to_tag_page(tag) {
             // TODO: turn to tag page herer!
             console.log("Plz add tag page here!", tag);
-            sessionStorage.clear();
             sessionStorage.setItem("searchTag", tag);
             location.href = 'history.html';
         }
@@ -99,7 +98,7 @@ define(["app/utils", "moment", "d3-context-menu", "ion.rangeSlider"], function(u
             .font("Impact")
             .fontSize(function(d) {
                     var fontSizeCalc = d.size / maxCount;
-                    return utils.log10(fontSizeCalc * 140) * 2;
+                    return Math.max(15, utils.log10(fontSizeCalc * 140) * 2);
             })
             //.fontSize(function(d) { return d.size * 20 })
             .on("end", draw)
@@ -130,7 +129,7 @@ define(["app/utils", "moment", "d3-context-menu", "ion.rangeSlider"], function(u
                         return d.text;
                 })
                 .on("mouseover", function(d) {
-                        tooltip.text("Search tag indluding " + searchDict[d.text] + "urls, -- Left-click for more options");
+                        tooltip.html("<p>Search tag indluding " + searchDict[d.text] + " urls.</p><p> Left-click to search by this tag.</p>");
                         tooltip.style("visibility", "visible");
                 })
                 .on("click", function(d){

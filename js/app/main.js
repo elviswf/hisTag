@@ -31,21 +31,27 @@ requirejs.config({
 	}
 });
 
+function get_by_url_id(url_id){
+  result = [];
+  var dataString = sessionStorage.getItem("historyData");
+  var historyData = JSON.parse(dataString);
+  for(var i = 0; i< historyData.length; ++i){
+    var item = historyData[i];
+    if(item.urlid === url_id){
+      result.push(item);
+    }
+  }
+  return result;
+};
+
 function get_history_list() {
+	
 	var data = [];
-	var tmp = {};
-	tmp.date = new Date();
-	tmp.url = 'www.baidu.com';
-	tmp.urlid = 12586;
-	tmp.tags = ['tag1', 'tag2'];
-	data.push(tmp);
-	var tmp2 = {};
-	tmp2.date = new Date();
-	tmp2.date.setDate(tmp2.date.getDate() - 7);
-	tmp2.url = 'www.baidu.com';
-	tmp2.urlid = 12580;
-	tmp2.tags = ['tag3', 'tag2'];
-	data.push(tmp2)
+	for(var i = 0 ;i <40; ++i){
+		var dataItem = get_by_url_id(i)[0];
+		dataItem.date = new Date(dataItem.dates*1000);
+		data.push(dataItem);
+	}
 	return data;
 }
 

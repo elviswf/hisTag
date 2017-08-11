@@ -31,6 +31,7 @@ $(document).ready(function () {
  });
 
 function fillInput(){
+  console.log("fullinput");
   var searchTag = sessionStorage.getItem("searchTag");
   input = document.getElementById("myInput");
   input.value = searchTag;
